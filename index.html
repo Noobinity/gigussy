@@ -6,9 +6,9 @@
     <style>
         
         .body{
-            
             background-image: url(titemohamog.gif);
             background-size: cover;
+            cursor:url(cursor.png), auto;
         
         } 
         .social-buttons a {
@@ -49,7 +49,6 @@
             top: 75%;
             left: 38%;
         }
-
     </style>
     <body class="body">
         
@@ -64,5 +63,19 @@
         <audio controls class="audiom">
             <source src="akiaura, LONOWN, STM - Sleepwalker (Official Music Video).mp3" type="audio/ogg">
           </audio>
+          <div class="test"></div>
     </body>
+    <script>
+        var should_play=true
+        window.onclick = () => {
+            if (should_play){
+                let soundSource = "meow.mp3";
+                let sound = new Audio(soundSource);
+                sound.play();
+                sound.oneded = () => {
+                }
+            }
+        }
+        
+    </script>
 </html>
